@@ -1,0 +1,72 @@
+@mixin characteristics {
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MainPageSections {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 100px;
+
+  font-weight: 400;
+  font-style: normal;
+  //   padding-top: 100px;padding-right: 15rem;
+  .WelcomeSect {
+    @include characteristics();
+    background-image: url("/assets/mainpage/welcome.png");
+  }
+  .MenuSect {
+    @include characteristics();
+    background-image: url("/assets/mainpage/menu.png");
+  }
+  .HouseSect {
+    @include characteristics();
+    background-image: url("/assets/mainpage/house.png");
+  }
+  .SalesSect {
+    @include characteristics();
+    background-image: url("/assets/mainpage/sales.png");
+  }
+  .aboutUsSect {
+    @include characteristics();
+    background-image: url("/assets/mainpage/aboutus.png");
+  }
+  .partnershipSect {
+    @include characteristics();
+    background-image: url("/assets/mainpage/partnership.png");
+  }
+}
+@media (max-width: 875px) {
+  .MainPageSections {
+    font-size: 2rem;
+    
+    h1{
+      line-height: 35px;
+      font-size: 2rem;
+    }
+    .WelcomeSect {
+      height: 50vh;
+    }
+    .MenuSect {
+      height: 50vh;
+    }
+    .HouseSect {
+      height: 50vh;
+    }
+    .SalesSect {
+      height: 50vh;
+    }
+    .aboutUsSect {
+      height: 50vh;
+    }
+    .partnershipSect {
+      height: 50vh;
+    }
+  }
+}

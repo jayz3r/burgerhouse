@@ -1,0 +1,13 @@
+[
+    {
+        "name": "нежная форель",
+        "price":"400",
+        "img": "/assets/data.img/meat/forel.png"
+
+    },
+    {
+        "name": "стейк рибай",
+        "price":"650",
+        "img": "/assets/data.img/meat/ribay.png"
+    }
+]

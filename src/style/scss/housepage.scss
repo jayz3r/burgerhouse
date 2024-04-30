@@ -1,0 +1,74 @@
+@mixin house {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+@mixin width {
+  width: 50%;
+  height: 568px;
+}
+.house {
+  .mainSect {
+    font-size: 3rem;
+    height: 100vh;
+    background-image: url("/assets/house/ХАУСЫ\ 1.jpg");
+    @include house();
+  }
+  .adresses {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    .adress-0 {
+      @include width();
+      @include house();
+      background-image: url("/assets/house/kievskaya.jpg");
+    }
+    .adress-1 {
+      @include width();
+      @include house();
+      background-image: url("/assets/house/plaza.jpg");
+    }
+    .adress-2 {
+      @include width();
+      @include house();
+      background-image: url("/assets/house/cosmopark.jpg");
+    }
+    .adress-3 {
+      @include width();
+      @include house();
+      background-image: url("/assets/house/alaarcha.jpg");
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  .house {
+    .mainSect {
+        height: 50vh;
+    }
+    .adresses {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      .adress-0 {
+        width: 100%;
+        height: 250px;
+      }
+      .adress-1 {
+        width: 100%;
+        height: 250px;
+      }
+      .adress-2 {
+        height: 250px;
+        width: 100%;
+      }
+      .adress-3 {
+        height: 250px;
+        width: 100%;
+      }
+    }
+  }
+}

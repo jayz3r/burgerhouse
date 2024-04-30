@@ -1,0 +1,19 @@
+.not-found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 69vh;
+     h2{
+        font-size: 4rem;
+    
+     }
+     p{
+        font-size: 2rem;
+     }
+}
+@media (max-width:875px) {
+   .not-found{
+      height: 80vh;
+   }
+}

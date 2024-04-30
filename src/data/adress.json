@@ -1,0 +1,34 @@
+[
+  {
+    "id":1,
+    "name": "киевская ",
+    "location": "киевская, 71",
+    "phone": "+996 776 287 437",
+    "schedule": "каждый день: 10:00-22:00",
+    "img": "/assets/house/kievskaya.jpg"
+  },
+  {
+    "id":2,
+    "name": "дордой плаза ",
+    "location": "дордой плаза, 4 этаж ",
+    "phone": "+996 501 287 437",
+    "schedule": "каждый день: 10:00-22:00",
+    "img": "/assets/house/plaza.jpg"
+  },
+  {
+    "id":3,
+    "name": "ала - арча  ",
+    "location": "ала - арча , 3 этаж",
+    "phone": "+996 500 287 437",
+    "schedule": "каждый день: 10:00-22:00",
+    "img": "/assets/house/alaarcha.jpg"
+  },
+  {
+    "id":4,
+    "name": "космопарк ",
+    "location": "космопарк, 2 этаж",
+    "phone": "+996 700 287 437",
+    "schedule": "каждый день: 10:00-22:00",
+    "img": "/assets/house/cosmopark.jpg"
+  }
+]

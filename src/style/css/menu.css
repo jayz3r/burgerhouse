@@ -1,0 +1,34 @@
+.Menu {
+  padding-top: 100px;
+}
+.Menu .preSect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-image: url("/src/assets/img/menupage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Menu .preSect .text {
+  width: 500px;
+}
+.Menu .preSect hr {
+  border-top: 1px solid rgb(255, 255, 255);
+  height: 1px;
+  text-align: center;
+  margin-left: 175px;
+  width: 150px;
+}

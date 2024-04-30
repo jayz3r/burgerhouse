@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@mixin sect {
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.Menu {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .preSect {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text {
+      width: 500px;
+    }
+    height: 100vh;
+
+    background-image: url("/assets/menu/menupage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    hr {
+      border-top: 2px solid rgb(255, 255, 255);
+      height: 1px;
+      text-align: center;
+      // margin-left: 20px;
+      // width: 510px;
+    }
+  }
+}
+
+.burgersSect {
+  background-image: url("/assets/menu/burgers.jpg");
+  @include sect();
+  @include flex();
+}
+.saladsSect {
+  @include flex();
+  @include sect();
+  background-image: url("/assets/menu/salads.jpg");
+}
+.snacksSect {
+  @include flex();
+  @include sect();
+  background-image: url("/assets/menu/snacks.jpg");
+}
+.soupsSect {
+  @include flex();
+  @include sect();
+  background-image: url("/assets/menu/soups.jpg");
+}
+.pizzaSect {
+  @include sect();
+  @include flex();
+  background-image: url("/assets/menu/pizza.jpg");
+}
+.meatSect {
+  @include flex();
+  @include sect();
+  background-image: url("/assets/menu/meat.jpg");
+}
+.garnierSect {
+  @include sect();
+  @include flex();
+  background-image: url("/assets/menu/garnier.jpg");
+}
+.contents {
+  display: flex;
+  gap: 5rem;
+  .icon {
+    font-size: 3rem;
+  }
+  .text {
+    // width: 220px;
+    font-size: larger;
+  }
+}
+
+.catalog {
+  .card {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    h3 {
+      padding-top: 5rem;
+      font-size: 4rem;
+    }
+    &__price {
+      font-size: 34px;
+      span {
+        color: blue;
+      }
+    }
+    &__details {
+      padding-top: 50px;
+      font-size: 1.5rem;
+      width: 535px;
+      color: #bbbbbb;
+    }
+    .cardImg {
+      width: 500px;
+      height: 500px;
+    }
+    a {
+      .ordering {
+        background-color: goldenrod;
+        margin-top: 20px;
+        padding: 14px 70px;
+        border-radius: 15px;
+        transition: 1s;
+      }
+      :hover {
+        transition-delay: 0.5s;
+        background-color: #fff;
+        color: goldenrod;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+}
+@media (max-width: 1120px) {
+  .catalog {
+    .card {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+      align-items: center;
+      h3 {
+        font-size: 3rem;
+        padding: 0;
+      }
+      .card__details {
+        padding: 0;
+      }
+      .cardImg {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
+@media (max-width: 875px) {
+  .Menu {
+    .preSect {
+      .text {
+        width: 400px;
+      }
+      height: 50vh;
+    }
+    hr {
+      display: none;
+    }
+    .contents {
+      gap: 1.5rem;
+      .icon {
+        text-align: center;
+        display: flex;
+        align-items: center;
+      }
+      .text {
+        width: 240px;
+        line-height: 50px;
+        font-size: larger;
+      }
+    }
+  }
+  .catalog {
+    .card {
+      &__header{
+        width:400px;
+      }
+      &__details{
+        width: 400px;
+      }
+      .head__title {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        h3 {
+          font-size: 2rem;
+        }
+
+        width: 410px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "name": "цезарь",
+        "price":"140",
+        "priceL":"190",
+        "img": "/assets/data.img/Salads/Caesar.png"
+
+    },
+    {
+        "name": "греческий",
+        "price":"130",
+        "priceL":"265",
+        "img": "/assets/data.img/Salads/GreekSalad.png"
+    }
+]

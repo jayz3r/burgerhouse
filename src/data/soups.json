@@ -1,0 +1,13 @@
+[
+    {
+        "name": "суп чили",
+        "price":"240",
+        "img": "/assets/data.img/soups/chili.png"
+
+    },
+    {
+        "name": "чечевичный суп",
+        "price":"130",
+        "img": "/assets/data.img/soups/lentil.png"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "title":"Бургеры",
+        "name": "Классический",
+        "price":"135",
+        "priceL":"175",
+        "description":"Фирменная булочка, красный лук, маринованный огурец, листья салата, помидор, соус Классический",
+        "img": "assets/data.img/Burgers/classicBurger.png"
+
+    },
+    {
+        "name": "Фирменный",
+        "price":"165",
+        "priceL":"205",
+        "description":"Фирменная булочка, грибы, маринованный огурец, помидор, жареный лук, соус BBQ",
+        "img": "assets/data.img/Burgers/brandBurger.png"
+    }
+]

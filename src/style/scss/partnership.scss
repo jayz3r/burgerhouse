@@ -1,0 +1,68 @@
+.partnership {
+  &-text {
+    h1 {
+      font-size: 7rem;
+    }
+    p {
+      font-size: 2rem;
+      padding-bottom: 50px;
+    }
+  }
+  &-form {
+    form {
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      label {
+        width: 700px;
+        font-size: 1.5rem;
+      }
+      input,
+      textarea {
+        color: black;
+        background-color: white;
+        width: 650px;
+        resize: none;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .partnership {
+    &-text {
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media (max-width: 875px) {
+  .partnership {
+    padding:50px 15px 0 ;
+    &-text{
+        h1{
+          font-size: 3rem;
+        }
+    }
+    &-form {
+      form {
+        label{
+          padding: 0 30px;
+          width:auto ;
+        }
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        input,
+      textarea {
+        width: 350px;
+      }
+      }
+    }
+  }
+}
